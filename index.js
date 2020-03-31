@@ -5,8 +5,11 @@ const mongoose = require('mongoose');
 
 const schema = require('./schema/schema');
 
+const cors = require('cors');
+
 const port = 5000;
 
+server.use(cors());
 
 mongoose
  .connect(
